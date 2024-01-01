@@ -1,0 +1,12 @@
+#ifndef CCHESS_RULES_GLOBAL_H
+#define CCHESS_RULES_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CCHESS_RULES_LIBRARY)
+#define CCHESS_RULES_EXPORT Q_DECL_EXPORT
+#else
+#define CCHESS_RULES_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CCHESS_RULES_GLOBAL_H
